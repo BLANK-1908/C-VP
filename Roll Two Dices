@@ -1,0 +1,22 @@
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+
+using namespace std;
+int main()
+{
+	long s = time(0);
+	int maxvalue = 6;
+	int minvalue = 1;
+	srand(s);
+
+	int n = rand() % (maxvalue - minvalue +1) + minvalue;
+	int m = rand() % (maxvalue - minvalue + 1) + minvalue;
+	cout << n << "," << m;
+	
+
+
+	return 0;
+}
+
+//Roll two Dice which generates random number
