@@ -1,0 +1,19 @@
+#include <iostream>
+
+using namespace std;
+int main()
+{
+
+	double F;
+	cout << "Temperature in F = ";
+	cin >> F;
+	
+	double C = (F - 32) * 5 / 9;
+	cout << "Temperature in C =" << C;
+
+
+
+	return 0;
+}
+
+// Converting F to C
