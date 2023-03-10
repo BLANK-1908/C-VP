@@ -1,0 +1,54 @@
+#include <iostream>
+#include <ctime>
+
+
+using namespace std;
+
+int main()
+{
+	int num;
+	int guess;
+	int tries = 0;
+
+	srand(time(0));
+
+	cout << "#############-RANDOM NUMBER GUESSING GAME-#################\n";
+
+	num = rand() % 5 + 1;
+	
+	do {
+		cout << "Guess the Number between 1 - 5 = ";
+		cin >> guess;
+		tries++;
+
+		if (guess >= 6) {
+			cout << "Not valid input. Try Again!\n";
+		}
+
+		else if (num > guess) {
+			cout << "You are wrong!\n";
+		}
+		else if(num < guess) {
+			cout << "You wrong! Try again.\n";
+		}
+		else {
+			cout << "You guessed correct! You WON! Number of tries = " << tries << "\n";
+
+		}
+		
+	} while (guess != num);
+
+	
+
+
+
+
+
+	cout << "####################-THE END-##############################";
+
+
+
+
+
+	return 0;
+}
